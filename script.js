@@ -8,20 +8,20 @@ const loader = document.querySelector(".loader");
 let apiQuotes = [];
 
 // Show Loading
-function loading() {
+function showLoadingSpinner() {
   loader.hidden = false;
   quoteContainer.hidden = true;
 }
 
 // Hide Loading
-function complete() {
+function hideLoadingSpinner() {
   quoteContainer.hidden = false;
   loader.hidden = true;
 }
 
 // Show new quote
 function newQuote() {
-  loading();
+  showLoadingSpinner();
   // Pick random quote
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
   // Check if Author field is blankc and replace with "quote unknown"
@@ -39,7 +39,7 @@ function newQuote() {
   }
   // Set quote, Hide loader
   quoteText.textContent = quote.text;
-  complete();
+  hideLoadingSpinner();
 }
 
 // Get quotes from API
