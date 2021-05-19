@@ -14,7 +14,7 @@ html {
 body {
   max-width: 100vw;
   min-height: 100vh;
-  background-color: #ffffff;
+  
   background-image: url("https://images.unsplash.com/photo-1457131760772-7017c6180f05?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2072&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,16 +33,16 @@ body {
   max-width: 900px;
   padding: 20px 30px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(212, 172, 79, .5);
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .quote-text {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .long-quote {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .fa-quote-left {
